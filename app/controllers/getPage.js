@@ -1,3 +1,4 @@
+"use strict";
 var fs = require('fs');
 
 
@@ -54,7 +55,7 @@ function getPagesConfig() {
 	return config;
 }
 
-function getPageIndexByAlias(search_alias, list = Array()) {
+function getPageIndexByAlias(search_alias, list) {
 	for (var i = 0; i <= list.pages.length; i++) {
 		if (list.pages[i].alias == search_alias) {
 			return i;

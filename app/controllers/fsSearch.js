@@ -1,3 +1,4 @@
+"use strict";
 var fs = require('fs');
 
 exports.postSearch = function(req, res) {
