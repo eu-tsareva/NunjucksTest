@@ -16,6 +16,12 @@
     {# Main content #}
     <main class="clearfix">
       {% include 'templates/partials/breadcrumbs.njk' %}
+      <div class="history-wrapper">
+        <b>History:</b>
+        <div id="history"></div>
+        <button id="bookmark"></button>
+      </div>
+
       {% block content %} {% endblock %}
     </main>
 
