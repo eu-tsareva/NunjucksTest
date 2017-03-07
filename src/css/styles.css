@@ -92,13 +92,6 @@ h1, h2 {
   color: #781a26;
 }
 
-.logo img {
-  display: inline-block;
-  margin-right: 10px;
-
-  vertical-align: baseline;
-}
-
 .main-nav {
   position: relative;
 
@@ -162,6 +155,7 @@ h1, h2 {
 .breadcrumbs {
   margin: 0;
   margin-bottom: 1.02040816326531%; /* 10px; */
+  margin-left: 2.915451895044%; /* 20px; */
   padding: 0;
 
   list-style: none;
@@ -169,7 +163,7 @@ h1, h2 {
 
 .breadcrumbs li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 15px;
 
   vertical-align: top;
 }
@@ -177,8 +171,8 @@ h1, h2 {
 .breadcrumbs a {
   position: relative;
   display: block;
-  padding: 10px;
-  padding-right: 7px;
+  padding: 7px;
+  padding-right: 0;
 
   font-size: 1.4em;
   line-height: 1;
@@ -197,7 +191,7 @@ h1, h2 {
   width: 0;
   height: 0;
 
-  border: 17px solid transparent;
+  border: 14px solid transparent;
   border-left-color: #666666;
   content: "";
 }
@@ -218,8 +212,6 @@ h1, h2 {
 .breadcrumbs a.active:hover {
   text-decoration: none;
 }
-
-
 
 .index-content {
   float: left;
