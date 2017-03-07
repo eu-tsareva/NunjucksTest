@@ -13,7 +13,7 @@
       </a>
       <ul class="main-nav-list">
         <li><a class="main-nav-link {% if page == 'home' %} main-nav-link-active {% endif %}"
-              href="{% if page != 'home'%}/{% endif %}">Home</a></li>
+              {% if page != 'home'%}href="/"{% endif %}>Home</a></li>
         {# <li><a class="main-nav-link {% if page == 'search' %} main-nav-link-active {% endif %}"
           href="{% if page != 'search'%}search{% endif %}">Searching</a></li>
         <li><a class="main-nav-link {% if page == 'link' %} main-nav-link-active {% endif %}"

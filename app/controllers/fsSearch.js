@@ -31,6 +31,7 @@ function getData(req) {
 			let alias = config.pages[i]['alias'];
 			object.text = fs.readFileSync('src/' + alias + '_' + lang + '.html', 'utf8')
 				.replace(/<\/?[^>]+>/g, '')
+        .replace(/{%\/?[^%}]+%}/g, '')
 				.replace(/   /g, '')
 				.replace(/\n/g, '');
 			object.title = lang == 'ru' ? config.pages[i]['title_ru'] : config.pages[i]['title_en'];

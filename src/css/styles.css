@@ -154,6 +154,7 @@ h1, h2 {
   color: #666666;
   background-color: #efeadd;
   border-radius: 5px;
+  cursor: default;
 }
 
 .search {
@@ -306,10 +307,6 @@ h1, h2 {
 
   font-size: 1.4em;
   line-height: 1.5;
-}
-
-.index-content .post p:not(:first-of-type) {
-  display: none;
 }
 
 .post-full-btn {
