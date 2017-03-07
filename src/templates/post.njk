@@ -1,0 +1,10 @@
+<article class="post">
+
+  {# Post header #}
+  {% import 'templates/macros/macro-post.njk' as post %}
+  {{ post.addPostHeader(title, author, date)}}
+
+  <div class="post-content">
+    {% block content %} {% endblock %}
+  </div>
+</article>

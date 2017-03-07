@@ -1,0 +1,32 @@
+<header class="main-header">
+  {# Title #}
+  <h1 class="logo"><a{% if page != 'home' %} href="/" {% endif %}>Название</a><span>{{title}}</span></h1>
+
+  {# Navigation #}
+
+  <div class="menu clearfix">
+    <nav class="main-nav clearfix">
+      <a class="btn main-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+        </svg>
+      </a>
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link {% if page == 'home' %} main-nav-link-active {% endif %}"
+              href="{% if page != 'home'%}/{% endif %}">Home</a></li>
+        {# <li><a class="main-nav-link {% if page == 'search' %} main-nav-link-active {% endif %}"
+          href="{% if page != 'search'%}search{% endif %}">Searching</a></li>
+        <li><a class="main-nav-link {% if page == 'link' %} main-nav-link-active {% endif %}"
+          href="{% if page != 'link'%}#{% endif %}">Link</a></li> #}
+      </ul>
+    </nav>
+
+    {# Search #}
+    <div class="search">
+      <form class="search-form" action="/search/str" method="post">
+        <input type="search" name="words">
+        <button type="submit" class="search-btn">искать</button>
+      </form>
+    </div>
+  </div>
+</header>
