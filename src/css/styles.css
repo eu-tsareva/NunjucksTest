@@ -158,6 +158,69 @@ h1, h2 {
  *
  */
 
+
+.breadcrumbs {
+  margin: 0;
+  margin-bottom: 1.02040816326531%; /* 10px; */
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  margin-right: 20px;
+
+  vertical-align: top;
+}
+
+.breadcrumbs a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  padding-right: 7px;
+
+  font-size: 1.4em;
+  line-height: 1;
+  color: #ffffff;
+
+  background-color: #666666;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+}
+
+.breadcrumbs a::after {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 0;
+  height: 0;
+
+  border: 17px solid transparent;
+  border-left-color: #666666;
+  content: "";
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs a.active {
+  background-color: #882433;
+  cursor: default;
+}
+
+.breadcrumbs a.active::after {
+  border-left-color: #882433;
+}
+
+.breadcrumbs a.active:hover {
+  text-decoration: none;
+}
+
+
+
 .index-content {
   float: left;
   width: 70%;
