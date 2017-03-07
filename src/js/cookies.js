@@ -45,7 +45,7 @@ function printHistory(divid = 'history') {
 		history = JSON.parse(history);
 		history = history.history;
 		for (var i = 1; i < history.length; i++) {
-			historyText += history[i];
+			historyText += ' ' + history[i];
 		}
 		document.getElementById(divid).innerHTML = historyText;
 	}
@@ -74,7 +74,7 @@ function deleteBookmark(alias) {
 	location.reload();
 }
 
-function updateBookmarks(alias, buttonID) {
+function updateBookmarks(alias, buttonID="bookmark") {
 	var temp = getCookie('bookmarks');
 	temp = JSON.parse(temp);
 	temp = temp.bookmarks;
