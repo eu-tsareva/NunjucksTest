@@ -5,12 +5,13 @@
 
 <h2>Результаты поиска</h2>
 {% for item in data %}
+  {{loop.length}}
   <div class="searching-result">
     <h3><a href="{{item.alias}}">{{item.title}}</a></h3>
     <p>{{item.text}}</p>
   </div>
-{% else %}
-  <div></div>
+<!-- {% else %}
+  <div></div> -->
 {% endfor %}
 
 {% endblock %}
