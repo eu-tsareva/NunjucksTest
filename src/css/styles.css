@@ -220,7 +220,7 @@ h1, h2 {
   line-height: 1;
   color: #ffffff;
 
-  background-color: #666666;
+  background-color: #882433;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   cursor: pointer;
@@ -234,7 +234,7 @@ h1, h2 {
   height: 0;
 
   border: 14px solid transparent;
-  border-left-color: #666666;
+  border-left-color: #882433;
   content: "";
 }
 
@@ -243,12 +243,12 @@ h1, h2 {
 }
 
 .breadcrumbs a.active {
-  background-color: #882433;
+  background-color: #666666;
   cursor: default;
 }
 
 .breadcrumbs a.active::after {
-  border-left-color: #882433;
+  border-left-color: #666666;
 }
 
 .breadcrumbs a.active:hover {
@@ -261,11 +261,16 @@ h1, h2 {
   transition: width 0.5s;
 }
 
-.post {
+.post-wrapper {
   margin-bottom: 1.457725947522%; /* 10px; */
   padding: 1.457725947522% 2.915451895044%; /* 10px 20px; */
+
   background-color: #ffffff;
   border-radius: 5px;
+}
+
+.post {
+
 }
 
 .post-header {
@@ -301,6 +306,10 @@ h1, h2 {
 
   font-size: 1.4em;
   line-height: 1.5;
+}
+
+.index-content .post p:not(:first-of-type) {
+  display: none;
 }
 
 .post-full-btn {
