@@ -357,6 +357,38 @@ h1, h2 {
   margin-bottom: 0;
 }
 
+.searching-title {
+  font-size: 1.6em;
+  line-height: 1.2;
+}
+
+.searching-result {
+  margin-bottom: 15px;
+
+  border-bottom: 1px solid #666666;
+}
+
+.searching-result:last-child {
+  border-bottom: none;
+}
+
+.searching-result h3{
+  margin: 0;
+  margin-bottom: 0.5em;
+
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+.searching-result p{
+  margin: 0;
+  margin-bottom: 1em;
+
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+
 /*
  *
  * Footer
