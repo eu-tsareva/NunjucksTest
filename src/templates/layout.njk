@@ -11,25 +11,7 @@
 <body>
   <div class="container">
     {# Header #}
-    <header class="main-header">
-      <h1 class="logo"><a><img src="http://placehold.it/50x33" alt="logo">Title</a></h1>
-      {# Navigation #}
-      <nav class="main-nav clearfix">
-        <a class="btn main-nav-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-          </svg>
-        </a>
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link main-nav-link-active" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#">Learn</a></li>
-          <li><a class="main-nav-link" href="#">Brainstorm</a></li>
-          <li><a class="main-nav-link" href="#">Create</a></li>
-          <li><a class="main-nav-link" href="#">Collaborate</a></li>
-          <li><a class="main-nav-link" href="#">Teach</a></li>
-        </ul>
-      </nav>
-    </header>
+    {% include 'templates/partials/header.njk' %}
 
     {# Main content #}
     <main class="clearfix">

@@ -7,7 +7,7 @@ exports.page = function(req, res) {
 		if ((req.cookies['lang'] == 'ru') || (req.cookies['lang'] == undefined)) {
 			res.render(req.params.alias + '_ru' + '.html', {
 				title: getTitle(req.params.alias, 'ru'),
-				breadcrumbs: getBreadCrumbs(req.params.alias)
+				 breadcrumbs: getBreadCrumbs(req.params.alias)
 			});
 		} else {
 			res.render(req.params.alias + '_en' + '.html', {
@@ -44,6 +44,7 @@ function getBreadCrumbs(alias_to_seek) {
 }
 
 function getTitle(alias, lang) {
+
 	let config = getPagesConfig();
 	let index = getPageIndexByAlias(alias, config);
 	let titlelang = 'title_' + lang;

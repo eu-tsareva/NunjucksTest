@@ -17,7 +17,7 @@ nunjucks.configure(__dirname + '/src', {
 });
 
 
-app.use('/', require('./app/router'));
+app.use('/', require('./app/router'));//.js added
 
 
 app.listen(require('./app/config.js')
