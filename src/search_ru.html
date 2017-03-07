@@ -1,0 +1,16 @@
+{% extends "templates/layout.njk" %}
+{% set page = 'search' %}
+
+{% block content %}
+
+<h2>Результаты поиска</h2>
+{% for item in data %}
+  <div class="searching-result">
+    <h3><a href="{{item.alias}}">{{item.title}}</a></h3>
+    <p>{{item.text}}</p>
+  </div>
+{% else %}
+  <div></div>
+{% endfor %}
+
+{% endblock %}
